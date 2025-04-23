@@ -29,7 +29,7 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signInModalLabel")));
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"signInModalLabel\"]")).isDisplayed(), "Sign-up form did not appear.");
-    }
+    }/*
 
     @Test(priority = 2)
     public void TC2_ValidSignup() throws InterruptedException {
@@ -43,7 +43,7 @@ public class BasePage {
         Assert.assertEquals(alertText, "Sign up successful.");
         alert.accept();
     }
-    /*
+
     @Test(priority = 3)
     public void TC3_EmptyFieldsSignup() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
