@@ -34,7 +34,7 @@ public class BasePage {
     @Test(priority = 2)
     public void TC2_ValidSignup() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        driver.findElement(By.xpath("//*[@id=\"sign-username\"]")).sendKeys("okRogkRR3h545tE8UYt5U6r7864ok");
+        driver.findElement(By.xpath("//*[@id=\"sign-username\"]")).sendKeys("okRogkRR3h545tE8UfYt5U6r7864ok");
         driver.findElement(By.id("sign-password")).sendKeys("Password123!");
         driver.findElement(By.xpath("//button[text()='Sign up']")).click();
         wait.until(ExpectedConditions.alertIsPresent());
@@ -148,6 +148,8 @@ public class BasePage {
     }*/
     @AfterTest
     public void tearDown() {
+
+        driver.close();
 
     }
 }
