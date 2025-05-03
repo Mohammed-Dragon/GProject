@@ -1,8 +1,28 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Test">
-    <test name="RegressionTest">
+<suite name="TestSuite">
+    <test name="SignUpTest">
         <classes>
-            <class name="BasePage"/>
+            <class name="Tests.SignUpTests"/>
+        </classes>
+    </test>
+    <test name="LoginTest">
+        <classes>
+            <class name="Tests.LogInTests"/>
+        </classes>
+    </test>
+    <test name="HomeTest">
+        <classes>
+            <class name="Tests.HomeTests"/>
+        </classes>
+    </test>
+    <test name="CartTest">
+        <classes>
+            <class name="Tests.CartTests"/>
+        </classes>
+    </test>
+    <test name="ContactTest">
+        <classes>
+            <class name="Tests.ContactTests"/>
         </classes>
     </test>
 </suite>
